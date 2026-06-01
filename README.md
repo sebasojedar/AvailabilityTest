@@ -1,7 +1,7 @@
 # ArquIA — Validación Método 1: Enrutamiento
 
 Pruebas automatizadas de validación del clasificador de atributos de calidad de **ArquIA**.
-Corresponde a la versión funcional de ArquIA operativa en **junio de 2026**.
+Corresponde a la versión funcional de ArchIA operativa en **junio de 2026**.
 
 ---
 
