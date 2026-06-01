@@ -1,13 +1,13 @@
-# ArquIA — Validación Método 1: Enrutamiento
+# ArchIA — Validación Método 1: Enrutamiento
 
-Pruebas automatizadas de validación del clasificador de atributos de calidad de **ArquIA**.
+Pruebas automatizadas de validación del clasificador de atributos de calidad de **ArchIA**.
 Corresponde a la versión funcional de ArchIA operativa en **junio de 2026**.
 
 ---
 
 ## Contexto
 
-Este repositorio es independiente del repositorio original de ArquIA. Contiene únicamente la carpeta de validación del Método 1, diseñada para integrarse con el backend de ArquIA ya existente.
+Este repositorio es independiente del repositorio original de ArchIA. Contiene únicamente la carpeta de validación del Método 1, diseñada para integrarse con el backend de ArquIA ya existente.
 
 El Método 1 verifica que el nodo `classifier` del grafo LangGraph resuelva correctamente el atributo de calidad (`quality_attribute`) y la intención (`intent`) de una consulta de entrada, como condición previa al enrutamiento hacia los nodos especializados (`style_disponibilidad`, `tactics_disponibilidad`, etc.).
 
