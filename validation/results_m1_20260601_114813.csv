@@ -1,0 +1,53 @@
+id,group,query,quality_attribute_esperado,quality_attribute_obtenido,qa_match,intent_esperado,intent_obtenido,intent_match,keyword_match,source,elapsed_s
+A01,disponibilidad_keywords,El sistema debe mantener un uptime del 99.9% mensual para el módulo de pedidos,disponibilidad,disponibilidad,True,,architecture,N/A,disponibilidad,llm,7.6
+A02,disponibilidad_keywords,Necesitamos implementar failover automático entre las dos regiones de AWS,disponibilidad,disponibilidad,True,,tactics,N/A,disponibilidad,llm,10.1
+A03,disponibilidad_keywords,¿Cómo configuro heartbeat entre los microservicios del cluster de producción?,disponibilidad,disponibilidad,True,,tactics,N/A,escalabilidad,llm,8.9
+A04,disponibilidad_keywords,El sistema debe tener tolerancia a fallos de hasta dos nodos simultáneos,disponibilidad,disponibilidad,True,,architecture,N/A,disponibilidad,llm,6.6
+A05,disponibilidad_keywords,¿Qué tácticas de fault detection recomiendas para un sistema bancario crítico?,disponibilidad,disponibilidad,True,,tactics,N/A,disponibilidad,llm,6.7
+A06,disponibilidad_keywords,Necesitamos cumplir un SLA de alta disponibilidad para el servicio de autenticación,disponibilidad,disponibilidad,True,,architecture,N/A,disponibilidad,llm,6.7
+A07,disponibilidad_keywords,Quiero implementar un circuit breaker para proteger el servicio de notificaciones,disponibilidad,disponibilidad,True,,tactics,N/A,disponibilidad,llm,7.8
+A08,disponibilidad_keywords,El módulo de pagos debe tener redundancia activa con hot standby en todo momento,disponibilidad,disponibilidad,True,,architecture,N/A,disponibilidad,llm,5.0
+A09,disponibilidad_keywords,El sistema debe ser resiliente ante caídas parciales de la infraestructura de red,disponibilidad,disponibilidad,True,,asr,N/A,general,llm,8.1
+A10,disponibilidad_keywords,Necesitamos una estrategia de recovery para el módulo de pedidos tras un fallo total,disponibilidad,disponibilidad,True,,tactics,N/A,disponibilidad,llm,9.4
+B01,otros_atributos,El sistema debe responder en menos de 200ms bajo carga alta en hora pico,latencia,latencia,True,,asr,N/A,escalabilidad,llm,6.8
+B02,otros_atributos,¿Cómo reducimos la latencia P95 del servicio de búsqueda a menos de 100ms?,latencia,latencia,True,,tactics,N/A,latencia,llm,6.0
+B03,otros_atributos,El módulo de reportes debe generar respuestas en menos de 500ms para el usuario,latencia,latencia,True,,architecture,N/A,general,llm,9.8
+B04,otros_atributos,El tiempo de respuesta del API no debe superar los 100ms en el percentil 99,latencia,latencia,True,,architecture,N/A,latencia,llm,6.3
+B05,otros_atributos,Necesitamos optimizar el round-trip time entre los microservicios del backend,latencia,latencia,True,,tactics,N/A,latencia,llm,7.4
+B06,otros_atributos,"Necesitamos escalar horizontalmente el sistema para manejar 50,000 usuarios concurrentes",escalabilidad,escalabilidad,True,,tactics,N/A,escalabilidad,llm,6.6
+B07,otros_atributos,¿Cómo implementamos sharding en la base de datos para manejar el crecimiento de datos?,escalabilidad,escalabilidad,True,,tactics,N/A,escalabilidad,llm,7.4
+B08,otros_atributos,El sistema debe auto-escalarse en AWS ante picos de demanda sin intervención manual,escalabilidad,escalabilidad,True,,architecture,N/A,escalabilidad,llm,6.8
+B09,otros_atributos,Queremos implementar particionamiento horizontal para distribuir la carga de escritura,escalabilidad,escalabilidad,True,,tactics,N/A,escalabilidad,llm,8.2
+B10,otros_atributos,El cluster debe crecer dinámicamente para manejar picos de throughput en temporada alta,escalabilidad,escalabilidad,True,,tactics,N/A,escalabilidad,llm,8.2
+C01,ambiguos,El sistema de facturación no puede caerse durante el cierre contable de fin de mes,disponibilidad,disponibilidad,True,,architecture,N/A,general,llm,6.1
+C02,ambiguos,"Si el servidor principal se detiene, necesitamos que el servicio continúe sin interrupciones",disponibilidad,disponibilidad,True,,architecture,N/A,general,llm,7.3
+C03,ambiguos,El negocio exige que el sistema siempre esté en línea para nuestros clientes,disponibilidad,disponibilidad,True,,architecture,N/A,general,llm,7.0
+C04,ambiguos,Necesitamos que el sistema siga procesando pedidos aunque algunos componentes presenten problemas,disponibilidad,disponibilidad,True,,architecture,N/A,general,llm,7.7
+C05,ambiguos,Los usuarios no deben experimentar cortes en el servicio de pagos bajo ninguna circunstancia,disponibilidad,disponibilidad,True,,architecture,N/A,general,llm,6.0
+C06,ambiguos,¿Cómo garantizamos que el módulo de pagos no tenga downtime durante las actualizaciones?,disponibilidad,disponibilidad,True,,tactics,N/A,general,llm,8.9
+C07,ambiguos,Nuestro cliente exige continuidad de servicio 24/7 para el módulo crítico de liquidaciones,disponibilidad,disponibilidad,True,,architecture,N/A,general,llm,6.8
+C08,ambiguos,"Si un nodo del cluster tiene problemas técnicos, los demás deben asumir su carga automáticamente",disponibilidad,disponibilidad,True,,architecture,N/A,escalabilidad,llm,6.1
+C09,ambiguos,"El negocio necesita que el sistema nunca deje de procesar transacciones, ni siquiera en mantenimiento",disponibilidad,disponibilidad,True,,architecture,N/A,general,llm,5.6
+C10,ambiguos,Queremos que el servicio se mantenga activo incluso durante despliegues de nuevas versiones,disponibilidad,disponibilidad,True,,tactics,N/A,general,llm,5.5
+D01,negativos_trampa,¿Qué significa el concepto de failover en arquitectura de software?,disponibilidad,disponibilidad,True,other,architecture,False,disponibilidad,llm,4.5
+D02,negativos_trampa,La base de datos necesita replicación para mejorar el rendimiento de consultas de lectura en reportes,escalabilidad,latencia,False,architecture,architecture,True,escalabilidad,llm,9.3
+D03,negativos_trampa,¿Cuál es la diferencia conceptual entre alta disponibilidad y tolerancia a fallos?,disponibilidad,disponibilidad,True,other,architecture,False,disponibilidad,llm,5.6
+D04,negativos_trampa,El módulo de caché implementa replicación entre nodos para distribuir la carga de consultas de lectura,escalabilidad,escalabilidad,True,architecture,architecture,True,escalabilidad,llm,5.4
+D05,negativos_trampa,Necesitamos redundancia en los backups de la base de datos para cumplir normativas de auditoría financiera,general,disponibilidad,False,architecture,architecture,True,disponibilidad,llm,5.9
+E01,intent_estilos,¿Qué estilo arquitectónico recomiendas para garantizar alta disponibilidad en el sistema?,disponibilidad,disponibilidad,True,style,architecture,False,disponibilidad,llm,5.4
+E02,intent_estilos,Necesito un estilo arquitectónico que soporte tolerancia a fallos activa para el módulo de pagos,disponibilidad,disponibilidad,True,style,architecture,False,disponibilidad,llm,4.4
+E03,intent_estilos,¿Microservicios o arquitectura event-driven para garantizar disponibilidad del sistema de pedidos?,disponibilidad,disponibilidad,True,style,architecture,False,disponibilidad,llm,5.3
+E04,intent_estilos,Sugiere estilos arquitectónicos para implementar recuperación ante fallos en un sistema bancario,disponibilidad,disponibilidad,True,style,architecture,False,disponibilidad,llm,5.0
+F01,intent_tacticas,¿Qué tácticas de disponibilidad recomiendas para el módulo de autenticación del sistema?,disponibilidad,disponibilidad,True,tactics,tactics,True,disponibilidad,llm,6.1
+F02,intent_tacticas,Necesito conocer las tácticas de detección de fallos para un sistema crítico de transacciones,disponibilidad,disponibilidad,True,tactics,tactics,True,disponibilidad,llm,7.6
+F03,intent_tacticas,Dame las mejores tácticas de recuperación ante fallos para el servicio de pedidos,disponibilidad,disponibilidad,True,tactics,tactics,True,disponibilidad,llm,6.9
+F04,intent_tacticas,¿Cómo implemento tácticas de prevención de fallos en mi sistema bancario crítico?,disponibilidad,disponibilidad,True,tactics,tactics,True,disponibilidad,llm,5.6
+G01,atributos_sin_nodo,El sistema debe autenticar y autorizar usuarios con control de acceso basado en roles granulares,general,general,True,,architecture,N/A,general,llm,5.6
+G02,atributos_sin_nodo,Necesitamos que sea fácil agregar nuevos módulos de facturación sin afectar los módulos existentes,general,general,True,,tactics,N/A,general,llm,7.9
+G03,atributos_sin_nodo,La interfaz de usuario debe ser intuitiva para personas del área contable sin conocimientos técnicos,general,general,True,,architecture,N/A,general,llm,6.8
+G04,atributos_sin_nodo,El sistema debe mantener trazabilidad completa de todas las operaciones financieras para auditoría,general,general,True,,architecture,N/A,general,llm,8.4
+G05,atributos_sin_nodo,Necesitamos que el sistema sea compatible con las APIs REST del proveedor de pagos externo,general,general,True,,architecture,N/A,general,llm,5.4
+H01,limite_robustez,...,general,general,True,other,other,True,general,llm,6.9
+H02,limite_robustez,hola,general,general,True,greeting,greeting,True,general,llm,4.8
+H03,limite_robustez,El sistema debe responder en menos de 100ms y además no presentar interrupciones del servicio,disponibilidad,latencia,False,architecture,asr,False,general,llm,9.6
+H04,limite_robustez,¿Qué es un atributo de calidad en arquitectura de software?,general,general,True,other,architecture,False,general,llm,5.6

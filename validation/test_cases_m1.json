@@ -1,0 +1,331 @@
+[
+  {
+    "id": "A01",
+    "group": "disponibilidad_keywords",
+    "query": "El sistema debe mantener un uptime del 99.9% mensual para el módulo de pedidos",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "A02",
+    "group": "disponibilidad_keywords",
+    "query": "Necesitamos implementar failover automático entre las dos regiones de AWS",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "A03",
+    "group": "disponibilidad_keywords",
+    "query": "¿Cómo configuro heartbeat entre los microservicios del cluster de producción?",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "A04",
+    "group": "disponibilidad_keywords",
+    "query": "El sistema debe tener tolerancia a fallos de hasta dos nodos simultáneos",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "A05",
+    "group": "disponibilidad_keywords",
+    "query": "¿Qué tácticas de fault detection recomiendas para un sistema bancario crítico?",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "A06",
+    "group": "disponibilidad_keywords",
+    "query": "Necesitamos cumplir un SLA de alta disponibilidad para el servicio de autenticación",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "A07",
+    "group": "disponibilidad_keywords",
+    "query": "Quiero implementar un circuit breaker para proteger el servicio de notificaciones",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "A08",
+    "group": "disponibilidad_keywords",
+    "query": "El módulo de pagos debe tener redundancia activa con hot standby en todo momento",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "A09",
+    "group": "disponibilidad_keywords",
+    "query": "El sistema debe ser resiliente ante caídas parciales de la infraestructura de red",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "A10",
+    "group": "disponibilidad_keywords",
+    "query": "Necesitamos una estrategia de recovery para el módulo de pedidos tras un fallo total",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "B01",
+    "group": "otros_atributos",
+    "query": "El sistema debe responder en menos de 200ms bajo carga alta en hora pico",
+    "quality_attribute_esperado": "latencia"
+  },
+  {
+    "id": "B02",
+    "group": "otros_atributos",
+    "query": "¿Cómo reducimos la latencia P95 del servicio de búsqueda a menos de 100ms?",
+    "quality_attribute_esperado": "latencia"
+  },
+  {
+    "id": "B03",
+    "group": "otros_atributos",
+    "query": "El módulo de reportes debe generar respuestas en menos de 500ms para el usuario",
+    "quality_attribute_esperado": "latencia"
+  },
+  {
+    "id": "B04",
+    "group": "otros_atributos",
+    "query": "El tiempo de respuesta del API no debe superar los 100ms en el percentil 99",
+    "quality_attribute_esperado": "latencia"
+  },
+  {
+    "id": "B05",
+    "group": "otros_atributos",
+    "query": "Necesitamos optimizar el round-trip time entre los microservicios del backend",
+    "quality_attribute_esperado": "latencia"
+  },
+  {
+    "id": "B06",
+    "group": "otros_atributos",
+    "query": "Necesitamos escalar horizontalmente el sistema para manejar 50,000 usuarios concurrentes",
+    "quality_attribute_esperado": "escalabilidad"
+  },
+  {
+    "id": "B07",
+    "group": "otros_atributos",
+    "query": "¿Cómo implementamos sharding en la base de datos para manejar el crecimiento de datos?",
+    "quality_attribute_esperado": "escalabilidad"
+  },
+  {
+    "id": "B08",
+    "group": "otros_atributos",
+    "query": "El sistema debe auto-escalarse en AWS ante picos de demanda sin intervención manual",
+    "quality_attribute_esperado": "escalabilidad"
+  },
+  {
+    "id": "B09",
+    "group": "otros_atributos",
+    "query": "Queremos implementar particionamiento horizontal para distribuir la carga de escritura",
+    "quality_attribute_esperado": "escalabilidad"
+  },
+  {
+    "id": "B10",
+    "group": "otros_atributos",
+    "query": "El cluster debe crecer dinámicamente para manejar picos de throughput en temporada alta",
+    "quality_attribute_esperado": "escalabilidad"
+  },
+  {
+    "id": "C01",
+    "group": "ambiguos",
+    "query": "El sistema de facturación no puede caerse durante el cierre contable de fin de mes",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "C02",
+    "group": "ambiguos",
+    "query": "Si el servidor principal se detiene, necesitamos que el servicio continúe sin interrupciones",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "C03",
+    "group": "ambiguos",
+    "query": "El negocio exige que el sistema siempre esté en línea para nuestros clientes",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "C04",
+    "group": "ambiguos",
+    "query": "Necesitamos que el sistema siga procesando pedidos aunque algunos componentes presenten problemas",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "C05",
+    "group": "ambiguos",
+    "query": "Los usuarios no deben experimentar cortes en el servicio de pagos bajo ninguna circunstancia",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "C06",
+    "group": "ambiguos",
+    "query": "¿Cómo garantizamos que el módulo de pagos no tenga downtime durante las actualizaciones?",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "C07",
+    "group": "ambiguos",
+    "query": "Nuestro cliente exige continuidad de servicio 24/7 para el módulo crítico de liquidaciones",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "C08",
+    "group": "ambiguos",
+    "query": "Si un nodo del cluster tiene problemas técnicos, los demás deben asumir su carga automáticamente",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "C09",
+    "group": "ambiguos",
+    "query": "El negocio necesita que el sistema nunca deje de procesar transacciones, ni siquiera en mantenimiento",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "C10",
+    "group": "ambiguos",
+    "query": "Queremos que el servicio se mantenga activo incluso durante despliegues de nuevas versiones",
+    "quality_attribute_esperado": "disponibilidad"
+  },
+  {
+    "id": "D01",
+    "group": "negativos_trampa",
+    "query": "¿Qué significa el concepto de failover en arquitectura de software?",
+    "quality_attribute_esperado": "disponibilidad",
+    "intent_esperado": "other"
+  },
+  {
+    "id": "D02",
+    "group": "negativos_trampa",
+    "query": "La base de datos necesita replicación para mejorar el rendimiento de consultas de lectura en reportes",
+    "quality_attribute_esperado": "escalabilidad",
+    "intent_esperado": "architecture"
+  },
+  {
+    "id": "D03",
+    "group": "negativos_trampa",
+    "query": "¿Cuál es la diferencia conceptual entre alta disponibilidad y tolerancia a fallos?",
+    "quality_attribute_esperado": "disponibilidad",
+    "intent_esperado": "other"
+  },
+  {
+    "id": "D04",
+    "group": "negativos_trampa",
+    "query": "El módulo de caché implementa replicación entre nodos para distribuir la carga de consultas de lectura",
+    "quality_attribute_esperado": "escalabilidad",
+    "intent_esperado": "architecture"
+  },
+  {
+    "id": "D05",
+    "group": "negativos_trampa",
+    "query": "Necesitamos redundancia en los backups de la base de datos para cumplir normativas de auditoría financiera",
+    "quality_attribute_esperado": "general",
+    "intent_esperado": "architecture"
+  },
+  {
+    "id": "E01",
+    "group": "intent_estilos",
+    "query": "¿Qué estilo arquitectónico recomiendas para garantizar alta disponibilidad en el sistema?",
+    "quality_attribute_esperado": "disponibilidad",
+    "intent_esperado": "style"
+  },
+  {
+    "id": "E02",
+    "group": "intent_estilos",
+    "query": "Necesito un estilo arquitectónico que soporte tolerancia a fallos activa para el módulo de pagos",
+    "quality_attribute_esperado": "disponibilidad",
+    "intent_esperado": "style"
+  },
+  {
+    "id": "E03",
+    "group": "intent_estilos",
+    "query": "¿Microservicios o arquitectura event-driven para garantizar disponibilidad del sistema de pedidos?",
+    "quality_attribute_esperado": "disponibilidad",
+    "intent_esperado": "style"
+  },
+  {
+    "id": "E04",
+    "group": "intent_estilos",
+    "query": "Sugiere estilos arquitectónicos para implementar recuperación ante fallos en un sistema bancario",
+    "quality_attribute_esperado": "disponibilidad",
+    "intent_esperado": "style"
+  },
+  {
+    "id": "F01",
+    "group": "intent_tacticas",
+    "query": "¿Qué tácticas de disponibilidad recomiendas para el módulo de autenticación del sistema?",
+    "quality_attribute_esperado": "disponibilidad",
+    "intent_esperado": "tactics"
+  },
+  {
+    "id": "F02",
+    "group": "intent_tacticas",
+    "query": "Necesito conocer las tácticas de detección de fallos para un sistema crítico de transacciones",
+    "quality_attribute_esperado": "disponibilidad",
+    "intent_esperado": "tactics"
+  },
+  {
+    "id": "F03",
+    "group": "intent_tacticas",
+    "query": "Dame las mejores tácticas de recuperación ante fallos para el servicio de pedidos",
+    "quality_attribute_esperado": "disponibilidad",
+    "intent_esperado": "tactics"
+  },
+  {
+    "id": "F04",
+    "group": "intent_tacticas",
+    "query": "¿Cómo implemento tácticas de prevención de fallos en mi sistema bancario crítico?",
+    "quality_attribute_esperado": "disponibilidad",
+    "intent_esperado": "tactics"
+  },
+  {
+    "id": "G01",
+    "group": "atributos_sin_nodo",
+    "query": "El sistema debe autenticar y autorizar usuarios con control de acceso basado en roles granulares",
+    "quality_attribute_esperado": "general"
+  },
+  {
+    "id": "G02",
+    "group": "atributos_sin_nodo",
+    "query": "Necesitamos que sea fácil agregar nuevos módulos de facturación sin afectar los módulos existentes",
+    "quality_attribute_esperado": "general"
+  },
+  {
+    "id": "G03",
+    "group": "atributos_sin_nodo",
+    "query": "La interfaz de usuario debe ser intuitiva para personas del área contable sin conocimientos técnicos",
+    "quality_attribute_esperado": "general"
+  },
+  {
+    "id": "G04",
+    "group": "atributos_sin_nodo",
+    "query": "El sistema debe mantener trazabilidad completa de todas las operaciones financieras para auditoría",
+    "quality_attribute_esperado": "general"
+  },
+  {
+    "id": "G05",
+    "group": "atributos_sin_nodo",
+    "query": "Necesitamos que el sistema sea compatible con las APIs REST del proveedor de pagos externo",
+    "quality_attribute_esperado": "general"
+  },
+  {
+    "id": "H01",
+    "group": "limite_robustez",
+    "query": "...",
+    "quality_attribute_esperado": "general",
+    "intent_esperado": "other"
+  },
+  {
+    "id": "H02",
+    "group": "limite_robustez",
+    "query": "hola",
+    "quality_attribute_esperado": "general",
+    "intent_esperado": "greeting"
+  },
+  {
+    "id": "H03",
+    "group": "limite_robustez",
+    "query": "El sistema debe responder en menos de 100ms y además no presentar interrupciones del servicio",
+    "quality_attribute_esperado": "disponibilidad",
+    "intent_esperado": "architecture"
+  },
+  {
+    "id": "H04",
+    "group": "limite_robustez",
+    "query": "¿Qué es un atributo de calidad en arquitectura de software?",
+    "quality_attribute_esperado": "general",
+    "intent_esperado": "other"
+  }
+]
